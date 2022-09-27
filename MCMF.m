@@ -1,7 +1,7 @@
 function  [b] = MCMF(net,init_b,gamma,epsilon,max_iter)
     b =init_b;
     [n,d] = size(init_b);
-    
+    Y = b;
     %%make sure n is even
     lo=0;
     if mod(n,2)~=0
@@ -41,7 +41,7 @@ function  [b] = MCMF(net,init_b,gamma,epsilon,max_iter)
         b = reshape(b_tem,n,d);
         
         
-        loss(iter+1)=norm(S-b*q','fro');
+        loss(iter+1)=norm(S-b*q','fro')+gamma*norm(b-Y,'fro');
         
         if abs(loss(iter+1) - loss(iter)) < epsilon
             break

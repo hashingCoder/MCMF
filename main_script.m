@@ -23,6 +23,7 @@ init_b = random_B;
 
 tic;
 [b] = MCMF(net,init_b,gamma,epsilon,max_iter);
+%[b] = DGHMF(net,init_b,gamma,epsilon,max_iter);
 t = toc;
 
 bit_blance = b'*ones(n,1);
