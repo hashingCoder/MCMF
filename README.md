@@ -9,7 +9,7 @@ This is the sourse code of MCMF, as described in our paper:
 
 <table>
     <tr>
-    	<th>Dataset</th>
+    	<th>Data set</th>
         <th>#Nodes</th>
         <th>#Edges</th>
         <th>#Classes</th>
@@ -41,9 +41,10 @@ This is the sourse code of MCMF, as described in our paper:
 </table>
 
 
-## Examples
-1. Download Data Sets to `./data/network`
-2. Run code in `./main_script.m`
+## Usage
+1. Download Data Sets 
+2. Get Matrix Factorization S by [NetMF](https://github.com/xptree/NetMF) `./netmf.py` using function ` direct_compute_deepwalk_matrix` for T=1 and `approximate_deepwalk_matrix` for T=10, then save the obtain matrix S to `./data/network` 
+3. Run code in `./main_script.m`
 
 
 ## Cite
