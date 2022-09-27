@@ -44,8 +44,8 @@ This is the sourse code of MCMF, as described in our paper:
 ## Usage
 1. Download Data Sets 
 2. Get Matrix Factorization S by [NetMF](https://github.com/xptree/NetMF) `./netmf.py` using function ` direct_compute_deepwalk_matrix` for T=1 and `approximate_deepwalk_matrix` for T=10, then save the obtain matrix S to `./data/network` 
-3. Run code in `./main_script.m`
-
+3. Change the parameters in `./main_script.m`, i.e., dataset, gamma and dim
+4. Run code in `./main_script.m`
 
 ## Cite
 
